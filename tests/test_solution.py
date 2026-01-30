@@ -8,12 +8,9 @@ Students can run these tests locally to check basic correctness of their impleme
 The hidden test suite used for grading contains additional edge cases and will not be
 available to students.
 """
-import importlib
-import inspect
 import pytest
 from solution import suggest_slots
 
-solution = importlib.import_module("solution")
 
 def test_single_event_blocks_overlapping_slots():
     """
